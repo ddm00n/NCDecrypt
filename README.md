@@ -3,7 +3,7 @@
 该工具用于用友NC数据库加密配置文件的解密，适用于老版本的DES加密和较新版本的AES加密。数据库配置文件在：
 
 ```
-$NCCHOME/ierp/bin/prop.ml
+$NCCHOME/ierp/bin/prop.xml
 ```
 
 ## 环境要求
