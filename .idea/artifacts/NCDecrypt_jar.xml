@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="NCDecrypt:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/NCDecrypt_jar</output-path>
+    <root id="archive" name="NCDecrypt.jar">
+      <element id="module-output" name="NCDecrypt" />
+    </root>
+  </artifact>
+</component>
