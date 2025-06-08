@@ -36,7 +36,7 @@ $NCCHOME/ierp/bin/key.properties
 
 ## 注意事项
 
-如果实在不想切Java版本，新版本的配置解密可以用python解密，老版本的可以参考https://github.com/1amfine2333/ncDecode项目。
+如果实在不想切Java版本，新版本的配置解密可以用python解密，老版本的可以参考```https://github.com/1amfine2333/ncDecode```项目。
 
 ```python
 # 需要安装 pycryptodome 库
