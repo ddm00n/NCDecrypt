@@ -12,21 +12,21 @@ $NCCHOME/ierp/bin/prop.ml
 
 ## 用法
 
-使用-d参数指定字符串进行解密。
+使用-d参数指定字符串进行解密，程序通过是否有#来判断新老版本，因此注意新版的解密一定带上#。
 
 对于老版本的DES加密：
 
 ```bash
-java -jar Ncdecrypt.jar -d jlehfdffcfmohiag
+java -jar NCDecrypt.jar -d jlehfdffcfmohiag
 ```
 
 对于较新版本的AES加密：
 
 ```bash
-java -jar Ncdecrypt.jar -d AE7538CF835CC319B2FCE31E3C746EBD -k 0031002E00310037002E00360032000000000000000000002B411706CAE8F01A
+java -jar NCDecrypt.jar -d #AE7538CF835CC319B2FCE31E3C746EBD -k 0031002E00310037002E00360032000000000000000000002B411706CAE8F01A
 ```
 
-k参数是密钥，有默认值。如果解密失败，可在：
+k参数是密钥，有默认值，可以不进行设置。如果默认值解密失败，可在：
 
 ```bash
 $NCCHOME/ierp/bin/key.properties
@@ -36,7 +36,7 @@ $NCCHOME/ierp/bin/key.properties
 
 ## 注意事项
 
-如果实在不想切Java版本，新版本的配置解密可以用python解密，老版本的可以参考```https://github.com/1amfine2333/ncDecode```项目。
+如果不想安装非JDK8的Java版本，新版本的配置解密可以用python解密，老版本的可以参考```https://github.com/1amfine2333/ncDecode```项目。
 
 ```python
 # 需要安装 pycryptodome 库
